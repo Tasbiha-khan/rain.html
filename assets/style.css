@@ -29,24 +29,134 @@
     text-decoration: none;
     transition: 0.5s ease;
 }
+.nav-logo{
+    background: #2F6F4E;
+}
 .banner{
     width: 100%;
     height: 80vh;
     background-color: aqua;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.137)), url(banner.img.jpeg);
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.041)), url(banner.img.jpeg);
     background-size: cover;
     background-position: center;
 }
 .text{
-    width: 50%;
-    height:50vh;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+}
+.text h1{
+    font-family: fantasy;
+    text-align: center;
+}
+.information{
+    width:100%;
+    height: 80vh;
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+.left{
+    width: 50%;
+    height: 60vh;
+}
+.left img{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.right{
+    width: 50%;
+    height: 60vh;
+}
+.right p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    cursor: pointer;
 }
 .footer{
     width: 100%;
-    height: 60vh;
-    background-color: green;
+    height: 40vh;
+    background-color: #2F6F4E;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    gap: 10px;
+}
+.footer div{
+    width: 40%;
+    height: max-content;
+    flex-direction: column;
+    color: white;
+}
+.footer div ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.footer div ul li{
+    list-style-type: none;
+    font-size: 15px;
+    gap: 10px;
+}
+.footer h2{
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+.footer a{
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+}
+.footer input{
+    padding: 6px 12px;
+    border: 2px solid black;
+    transition: 0.5s ease;
+}
+.footer button:hover{
+    color:#3F8A63;
+    background-color: darkgreen;
+    color: black;
+}
+.footer button{
+    width: 30%;
+    background-color: #F4FBF7;
+    color: #1F2D26;
+    font-size: small;
+    padding: 6px 8px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: normal;
+}
+.about{
+    width: 100%;
+    height: max-content;
+    background-color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.about h1{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-weight: 900;
+    font-size: large;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
 }
