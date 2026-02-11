@@ -40,47 +40,79 @@
     background-size: cover;
     background-position: center;
 }
-.text{
+.tech{
     width: 100%;
-    height:100%;
+    height: max-content;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.tech h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.parent{
+    width: 100%;
+    height: max-content;
+    display: flex;
+}
+.leftside{
+    width: 30%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 30px;
 }
-.text h1{
-    font-family: fantasy;
-    text-align: center;
+.leftside img{
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 20px;
+}
+.leftside h3{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: end;
+    padding-right: 3px;
+}
+.rightside{
+    width: 70%;
+    height: 50vh;
+}
+.rightside p{
+    color: black;
+    padding-top:20px;
+    margin-top: 2px;
+}
+.rightside h3{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .information{
     width:100%;
-    height: 80vh;
-    background-color: whitesmoke;
+    height: max-content;
+    background-color: aquamarine;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
     padding: 40px;
 }
-.left{
-    width: 50%;
-    height: 60vh;
+.information h2{
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: start;
 }
-.left img{
-    width: 50%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+.information h3{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.right{
-    width: 50%;
-    height: 60vh;
-}
-.right p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    cursor: pointer;
+.information p{
+    color:black;
+    padding-top: 10px;
 }
 .footer{
     width: 100%;
@@ -139,6 +171,7 @@
     cursor: pointer;
     font-weight: normal;
 }
+/* homepage end */
 .about{
     width: 100%;
     height: max-content;
@@ -146,17 +179,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 20px;
 }
 .about h1{
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: oblique;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
-    font-size: large;
+    font-size: 35px;
     color: black;
-    text-align: left;
     cursor: pointer;
     font-size: 20px;
     margin: 20px;
+}
+.rightside{
+    width: 50%;
+    height: 60vh;
+}
+.rightside img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.rightside p{
+    color: black;
+    font-size: 10px;
+    padding-left: 5px;
+}
+.leftside{
+    width: 50%;
+    height: 60vh;
 }
