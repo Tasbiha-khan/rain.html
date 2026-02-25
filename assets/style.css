@@ -8,7 +8,7 @@ html{
 }
 .navbar{
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #0c2e4d;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ html{
 }
 .nav-logo{
     width: 40px;
-    height: 40px;
+    height: 45px;
 
 }
 .nav-logo img{
@@ -60,6 +60,19 @@ html{
     background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.041)), url(banner.img.jpeg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    animation: slider 5s linear infinite;
+}
+@keyframes slider {
+    0%{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.041)) ,url(banner.img.jpeg);
+    }
+    25%{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.041)), url(animation.png);
+    }
 }
 .tech{
     width: 40%;
@@ -74,7 +87,7 @@ html{
     gap: 10px;
 }
 .tech h1{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     text-align: center;
     letter-spacing: 1.5px;
@@ -113,7 +126,7 @@ html{
 }
 .leftside h3{
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     text-align:left;
     word-spacing: 1px;
     letter-spacing: 1.5px;
@@ -175,7 +188,7 @@ html{
     position: relative;
 }
 .mainbox h4{
-    font-family: monospace;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     color: black;
     padding: 5px;
@@ -186,7 +199,7 @@ html{
     padding: 6px 12px;
     background-color: #FFF;
     position: absolute;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     border: 1px solid black;
     right: 25%;
     bottom: 10%;
@@ -199,7 +212,6 @@ html{
 .box1{
     width: 30%;
     height: 60%;
-    background-color: green;
     background-image:linear-gradient(rgba(39, 30, 30, 0.041)), url(area1.png);
     background-size: cover;
     background-position: center;
@@ -212,7 +224,6 @@ html{
 .box2{
     width: 30%;
     height: 60%;
-    background-color: plum;
     background-image:linear-gradient(rgba(39, 30, 30, 0.082)), url(area2.png);
     background-size: cover;
     background-position: center;
@@ -223,19 +234,9 @@ html{
     transform: translateY(-20px);
 }
 /* categories end */
-.development{
-    width: 100%;
-    height:max-content;
-    background-color:aliceblue;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content:center;
-    position: relative;
-}
 .footer{
     width: 100%;
-    height: 45vh;
+    height: max-content;
     background-color: #0c2e4d;
     display: flex;
     justify-content: space-evenly;
@@ -248,6 +249,7 @@ html{
     height: max-content;
     flex-direction: column;
     color: white;
+    gap: 10px;
 }
 .footer div ul{
     display: flex;
@@ -262,8 +264,11 @@ html{
 .footer h2{
     margin-bottom: 25px;
     font-size: 20px;
+    letter-spacing: 1.5px;
+    word-spacing: 1px;
     font-style: italic;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
     padding: 20px;
 }
 .footer a{
@@ -286,23 +291,26 @@ html{
     background-color:aliceblue;
     color: black;
 }
-.footer button:hover{
-    background-color: black;
-    color: white;
-}
 .footer button{
     width: 40%;
     background-color: #FFF;
     color: black;
     font-size: 10px;
-    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
     padding: 6px 8px;
     border: 2px solid black;
     cursor: pointer;
     font-weight: normal;
 }
+.footer button:hover{
+    background-color: black;
+    color: white;
+}
 .footer .child1 i{
     color: #ffc800;
+}
+.footer .child1 i:hover{
+    color: #2F6F4E;
 }
 .copyright{
     width: 100%;
@@ -382,11 +390,10 @@ html{
     height: 100%;
     background-color:aliceblue;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 10px;
-    margin-left: 30px;
     gap: 20px;
 }
 .divleft p{
@@ -413,6 +420,7 @@ html{
     border: 1px solid black;
     color: black;
     padding: 10px 12px;
+    resize: none;
 }
 .divleft textarea:focus{
     border: none;
@@ -513,7 +521,7 @@ html{
     color:black;
 }
 .facts span{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     letter-spacing: 1.5px;
     word-spacing: 1px;
@@ -536,6 +544,9 @@ html{
     color:black;
     padding: 10px;
 }
+
+/* facts complete */
+
 .heading{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
@@ -580,7 +591,7 @@ html{
     height: max-content;
 }
 .m2 h4{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     letter-spacing: 1.5px;
     word-spacing: 1px;
@@ -596,6 +607,8 @@ html{
     padding: 10px;
     text-align: justify;
 }
+
+/* method complete */
 
 .use{
     width: 100%;
@@ -629,7 +642,7 @@ html{
     padding: 10px;
 }
 .use h5{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     letter-spacing: 1.5px;
     word-spacing: 1px;
@@ -646,7 +659,7 @@ html{
 
 }
 .text{
-    font-family:'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     letter-spacing: 1.5px;
     word-spacing: 1px;
@@ -655,7 +668,7 @@ html{
     padding: 8px;
 }
 .ltd{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     letter-spacing: 1.5px;
     word-spacing: 1px;
@@ -690,7 +703,7 @@ html{
 
 /* products page start */
 #tool{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     letter-spacing: 1.5px;
     word-spacing: 1px;
@@ -725,7 +738,7 @@ html{
     border-radius: 15px;
 }
 .card h2{
-    font-family: 'Times New Roman', Times, serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
     letter-spacing: 1.5px;
     word-spacing: 1px;
@@ -733,7 +746,7 @@ html{
     text-align: center;
 }
 .card p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-style:italic;
     font-size: 18px;
     letter-spacing: 1.1px;
@@ -743,8 +756,7 @@ html{
 .card:hover {
     transform: translateY(-20px);
 }
-
-.btngroup button {
+.card button {
     width: 100%;
     padding: 8px, 16px;
     background-color: transparent;
@@ -755,15 +767,10 @@ html{
     color: white;
     transition: 0.5s ease;
 }
-.btngroup a{
+.card button a{
     width: 100%;
 }
-
-.btngroup {
-    display: flex;
-    justify-content: space-between;
-}
-.btngroup button:hover{
+.card button:hover{
     background-color: #2F6F4E;
     color:white;
 }
@@ -815,9 +822,17 @@ html{
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:992px){
     .links{
         display: none;
+        display: none;
+        flex-direction: column;
+        background: #0c2e4d;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px;
     }
     .navmenu{
         display: block;
@@ -827,13 +842,16 @@ html{
         transform: rotate(90deg);
         
     }
+    .links.active{
+        display: flex;
+    }
     .banner{
         background-size: contain;
         background-repeat: no-repeat;
     }
     .tech{
         flex-direction:column;
-        /* height: max-content; */
+        height: max-content;
     }
     .leftside{
         display: none;
@@ -842,12 +860,36 @@ html{
         flex-direction: column;
         height: max-content;
     }
+    .rightside{
+        width: 100%;
+    }
+
+    .rightside button{
+        width: 100%;
+    }
     .smallbox{
         height: max-content;
     }
     .mainbox{
         flex-direction: column;
-        height: max-content;
+        height: 80vh;
+        padding: 15px;
+    }
+    .mainbox button{
+        width: 100%;
+        bottom: 5px;
+        right: 10px;
+        
+    }
+    .box1{
+        width: 100%;
+        height: 100%;
+    }
+    .box2{
+        
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
     }
     .footer{
         height: max-content;
@@ -859,7 +901,38 @@ html{
     .copyright{
         height: max-content;
     }
-    
+    /* homepage done */
+   .contact{
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+   }
+   .divleft{
+    width: 100%;
+    margin-top: 15px;
+   }
+   .divright{
+    width: 100%;
+    margin-bottom: 15px;
+   }
+   .info{
+    flex-direction: column;
+    height: max-content;
+   }
+   .methods{
+    flex-direction: column;
+    height: max-content;
+   }
+   .m1{
+    display: none;
+   }
+   .m2{
+    width: 100%;
+   }
+   .parentofcards{
+    flex-direction: column;
+    height: max-content;
+   }
 }
 
 

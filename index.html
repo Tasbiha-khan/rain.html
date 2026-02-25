@@ -16,9 +16,10 @@
     <title>HOME</title>
 </head>
 
+
 <body>
     <div class="navbar">
-        <div class="links">
+        <div class="links"  id="navLinks" >
             <div class="nav-logo">
                 <img src="assets/logo-removebg-preview.png" alt="Logo">
             </div>
@@ -30,7 +31,7 @@
             <a href="Development.html">Development</a>
             <a href="contact.html">Contact</a>
         </div>
-        <div class="navmenu" id="navmenu">|||</div>
+        <div class="navmenu" id="menu" onclick="toggleMenu()">|||</div>
     </div>
     <!-- nav end -->
     <div class="banner" id="top">
@@ -53,26 +54,6 @@
                 the water is stored in a subsurface storage tank where it is kept safe for future use.</p>
             <a href="techniques.html"><button>Explore more Techniques</button></a>
         </div>
-
-        <!-- <div class="parent">
-            <div class="leftside">
-                <h3>Recharge Pit Method</h3>
-                <img src="assets/img3.png" alt="">
-            </div>
-            <div class="rightside">
-                <p>Recharge pit method is a rainwater harvesting technique in which rainwater is collected and allowed to percolate into the ground through specially constructed pits. These pits are usually filled with layers of gravel, sand, and stones that help filter the water before it reaches the underground aquifers. This process improves the quality and quantity of groundwater in the area.The rainwater collected from rooftops or surface runoff is diverted into these pits through pipes or drains. This method helps prevent waterlogging and ensures effective utilization of rainwater.</p>
-            </div>
-        </div>
-        <div class="parent">
-             <div class="rightside">
-                <h3>Percolation Pit Technique</h3>
-                <img src="assets/img4.png" alt="">
-            </div>
-            <div class="leftside">
-                <p>The Percolation Pit Technique is a simple and effective rainwater harvesting method used to recharge groundwater levels. In this method, a pit is dug into the ground and filled with layers of gravel, sand, and stones. Rainwater collected from rooftops, open areas, or surface runoff is directed into the pit, where it slowly percolates through the soil. This natural filtration process helps remove impurities before the water reaches underground aquifers.</p>
-            </div>
-        </div> -->
-
     </div>
     <!-- techniques end -->
     <div class="smallbox">
@@ -135,8 +116,20 @@
     </div>
     <!-- footer end -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script> -->
 </body>
+<script>
+    function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+<!-- <script>
+        var toggeler =document.getElementById("menu")
+    toggeler.addEventListener("click",()=>{
+      document.getElementById("myLinks").classList.toggle("navmenu")
+
+    })
+</script> -->
 
 </html>
